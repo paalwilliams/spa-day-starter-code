@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org/">
+
+<head th:replace =  "fragments :: dochead"> </head>
+<body>
+<div class="container w-50">
+<form method = 'post'>
+    <div class="form-group">
+    <label>
+        Skin type:
+        <select name = 'skintype' class="form-control">
+            <option value = 'oily'>Oily</option>
+            <option value = 'combination'>Combination</option>
+            <option value = 'normal'>Normal</option>
+            <option value = 'dry'>Dry</option>
+        </select>
+    </label>
+    </div>
+    <div class="form-group">
+    <label>
+        Manicure or Pedicure?
+        <select name = 'manipedi' class="form-control">
+            <option value = 'manicure'>Manicure</option>
+            <option value = 'pedicure'>Pedicure</option>
+        </select>
+    </label>
+    </div>
+    <input type = 'submit' value = 'Submit' class="btn btn-primary">
+</form>
+</div>
+</body>
+</html>
